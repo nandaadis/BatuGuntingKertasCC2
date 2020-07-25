@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#263859</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="bgprimary">#17223b</color>
+    <color name="red">#e7305b</color>
+    <color name="blue">#01a9b4</color>
+    <color name="kuning">#f0a500</color>
+    <color name="btnbackground">#ff6768</color>
+    <color name="white">#fff</color>
+    <color name="foreground">#DA6B778D</color>
+
+</resources>

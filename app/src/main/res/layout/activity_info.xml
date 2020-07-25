@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+    android:background="@color/bgprimary">
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:textColor="@color/white"
+        android:fontFamily="@font/grenzegotisch"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/develop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Develop by NandaAdiS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/desain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design by NandaAdiS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/develop"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/vector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vector assets from freepik:brgfx "
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desain"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:background="@drawable/btnbg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

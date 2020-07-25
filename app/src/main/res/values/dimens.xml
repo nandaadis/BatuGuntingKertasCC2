@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius">20dp</dimen>
+    <dimen name="text">21sp</dimen>
+    <dimen name="text_status">30sp</dimen>
+    <dimen name="iconsize">80dp</dimen>
+    <dimen name="iconsize_select">100dp</dimen>
+
+</resources>

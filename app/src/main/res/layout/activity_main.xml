@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bgprimary">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent="0.8"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glhorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <TextView
+        android:id="@+id/your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kamu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@id/glhorizontal"
+        />
+
+    <TextView
+        android:id="@+id/your_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@id/your_name"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/opp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lawan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toStartOf="@id/right_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toBottomOf="@id/glhorizontal"
+        />
+
+    <TextView
+        android:id="@+id/opp_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintStart_toStartOf="@id/right_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toBottomOf="@id/opp_name"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/your_rock"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@id/your_point"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/your_scissor"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@id/your_rock"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/your_papper"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@id/your_scissor"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/opp_rock"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/right_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toBottomOf="@id/opp_point"
+        android:layout_marginTop="30dp"
+        android:rotationY="180"
+        />
+
+    <ImageView
+        android:id="@+id/opp_scissor"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/right_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toBottomOf="@id/opp_rock"
+        android:layout_marginTop="30dp"
+        android:rotationY="180"
+        />
+
+    <ImageView
+        android:id="@+id/opp_papper"
+        android:layout_width="@dimen/iconsize"
+        android:layout_height="@dimen/iconsize"
+        app:layout_constraintStart_toStartOf="@id/right_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toBottomOf="@id/opp_scissor"
+        android:layout_marginTop="30dp"
+        android:rotationY="180"
+        />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:background="@drawable/btnbg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/grenzegotisch"
+        android:textSize="@dimen/text_status"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintEnd_toEndOf="@id/right_gl"
+        app:layout_constraintTop_toTopOf="@id/your_rock"
+        app:layout_constraintBottom_toBottomOf="@id/your_papper"
+        android:layout_marginBottom="35dp"
+        />
+
+    <Button
+        android:id="@+id/ulang"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:text="Ulang?"
+        android:textSize="12sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:background="@drawable/btnbg2"
+        app:layout_constraintStart_toStartOf="@id/status"
+        app:layout_constraintEnd_toEndOf="@id/status"
+        app:layout_constraintTop_toBottomOf="@id/status"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
