@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.core.content.res.ResourcesCompat
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         //Rock Button
         binding.yourRock.setOnClickListener() {
             val kamu = 1
+            Log.d ("Pilihan", "Kamu memilih batu")
             var you:ImageView = binding.yourRock
             var youhilang1 = binding.yourPapper
             var youhilang2 = binding.yourScissor
@@ -95,6 +97,7 @@ class MainActivity : AppCompatActivity() {
         //Scissor Button
         binding.yourScissor.setOnClickListener() {
             val kamu = 2
+            Log.d ("Pilihan", "Kamu memilih gunting")
             var you:ImageView = binding.yourScissor
             var youhilang1 = binding.yourPapper
             var youhilang2 = binding.yourRock
@@ -149,6 +152,7 @@ class MainActivity : AppCompatActivity() {
         //Papper Button
         binding.yourPapper.setOnClickListener() {
             val kamu = 3
+            Log.d ("Pilihan", "Kamu memilih kertas")
             var you:ImageView = binding.yourPapper
             var youhilang1 = binding.yourScissor
             var youhilang2 = binding.yourRock
