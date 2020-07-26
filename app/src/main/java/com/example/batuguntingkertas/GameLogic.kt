@@ -1,6 +1,7 @@
 package com.example.batuguntingkertas
 
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import com.example.batuguntingkertas.databinding.ActivityMainBinding
@@ -11,15 +12,15 @@ class GameLogic() {
     fun select(image1:ImageView,image2:ImageView,image3:ImageView){
         image1.scaleX = 1.4F
         image1.scaleY = 1.4F
-        image2.visibility = 5
-        image3.visibility = 5
+        image2.visibility = View.INVISIBLE
+        image3.visibility = View.INVISIBLE
     }
 
     fun ulang(image1:ImageView,image2:ImageView,image3:ImageView){
         image1.scaleX = 1.0F
         image1.scaleY = 1.0F
-        image2.visibility = 1
-        image3.visibility = 1
+        image2.visibility = View.VISIBLE
+        image3.visibility = View.VISIBLE
     }
 
 

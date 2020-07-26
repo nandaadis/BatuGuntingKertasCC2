@@ -77,16 +77,16 @@ class MainActivity : AppCompatActivity() {
             binding.status.text = "$text"
             binding.yourPoint.text = "Point : ${point.kamu}"
             binding.oppPoint.text = "Point : ${point.lawan}"
-            binding.restart.visibility = 5
+            binding.restart.visibility = View.INVISIBLE
 
             var btnulang = binding.ulang
-            btnulang.visibility = 1
+            btnulang.visibility = View.VISIBLE
             binding.ulang.setOnClickListener(){
                 gamelogic.ulang(you,youhilang1,youhilang2)
                 gamelogic.ulang(lawan,hilang1,hilang2)
-                btnulang.visibility = 5
+                btnulang.visibility = View.INVISIBLE
                 binding.status.text = "VS"
-                binding.restart.visibility = 1
+                binding.restart.visibility = View.VISIBLE
                 binding.yourRock.isClickable = true
             }
 
@@ -133,16 +133,16 @@ class MainActivity : AppCompatActivity() {
             binding.status.text = "$text"
             binding.yourPoint.text = "Point : ${point.kamu}"
             binding.oppPoint.text = "Point : ${point.lawan}"
-            binding.restart.visibility = 5
+            binding.restart.visibility = View.INVISIBLE
 
             var btnulang = binding.ulang
-            btnulang.visibility = 1
+            btnulang.visibility = View.VISIBLE
             binding.ulang.setOnClickListener(){
                 gamelogic.ulang(you,youhilang1,youhilang2)
                 gamelogic.ulang(lawan,hilang1,hilang2)
-                btnulang.visibility = 5
+                btnulang.visibility = View.INVISIBLE
                 binding.status.text = "VS"
-                binding.restart.visibility = 1
+                binding.restart.visibility = View.VISIBLE
                 binding.yourScissor.isClickable = true
             }
 
@@ -188,16 +188,16 @@ class MainActivity : AppCompatActivity() {
             binding.status.text = "$text"
             binding.yourPoint.text = "Point : ${point.kamu}"
             binding.oppPoint.text = "Point : ${point.lawan}"
-            binding.restart.visibility = 5
+            binding.restart.visibility = View.INVISIBLE
 
             var btnulang = binding.ulang
-            btnulang.visibility = 1
+            btnulang.visibility = View.VISIBLE
             binding.ulang.setOnClickListener(){
                 gamelogic.ulang(you,youhilang1,youhilang2)
                 gamelogic.ulang(lawan,hilang1,hilang2)
-                btnulang.visibility = 5
+                btnulang.visibility = View.INVISIBLE
                 binding.status.text = "VS"
-                binding.restart.visibility = 1
+                binding.restart.visibility = View.VISIBLE
                 binding.yourPapper.isClickable = true
             }
 
