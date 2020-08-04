@@ -97,7 +97,7 @@
         android:id="@+id/opp_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lawan"
+        android:text="lawan"
         android:textColor="@color/white"
         android:textSize="@dimen/text"
         android:fontFamily="@font/roboto_medium"

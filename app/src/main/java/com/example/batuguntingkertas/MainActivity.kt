@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val name = bundle?.getString("nama")
 
         your_name.text = name
+        opp_name.text = "CPU"
 
         home.setOnClickListener(){
             finish()
