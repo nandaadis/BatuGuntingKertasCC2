@@ -19,6 +19,7 @@ class Info : AppCompatActivity() {
 
         binding.back.setOnClickListener(){
             startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
     }
 }

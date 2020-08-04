@@ -2,8 +2,16 @@
 <resources>
     <dimen name="radius">20dp</dimen>
     <dimen name="text">21sp</dimen>
+    <dimen name="text2">18sp</dimen>
     <dimen name="text_status">30sp</dimen>
-    <dimen name="iconsize">80dp</dimen>
+    <dimen name="iconsize">64dp</dimen>
     <dimen name="iconsize_select">100dp</dimen>
+    <dimen name="vector_size">64dp</dimen>
+    <dimen name="vector_margin">16dp</dimen>
+    <dimen name="lp_imgsize">200dp</dimen>
+    <dimen name="lp_imgmargin">200dp</dimen>
+    <dimen name="menu_imgsize">128dp</dimen>
+    <dimen name="menu_margin">24dp</dimen>
+    <dimen name="menu_textsize">16sp</dimen>
 
 </resources>

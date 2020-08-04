@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide
 import com.example.batuguntingkertas.databinding.ActivityMainBinding
 import com.example.batuguntingkertas.databinding.ActivityMainBinding.inflate
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_menu.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +30,23 @@ class MainActivity : AppCompatActivity() {
 
         binding.yourPoint.text = "Point : ${point.kamu}"
         binding.oppPoint.text = "Point : ${point.lawan}"
+
+        val bundle = intent.extras
+        val name = bundle?.getString("nama")
+
+        your_name.text = name
+
+        home.setOnClickListener(){
+            finish()
+            point.kamu = 0
+            point.lawan = 0
+            binding.yourPoint.text = "Point : ${point.kamu}"
+            binding.oppPoint.text = "Point : ${point.lawan}"
+        }
+
+        exit.setOnClickListener() {
+            System.exit(0);
+        }
 
         //Restart Button
         binding.restart.setOnClickListener() {
