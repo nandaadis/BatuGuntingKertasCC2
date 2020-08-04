@@ -22,25 +22,25 @@ class MenuActivity : AppCompatActivity() {
         menu_text1.text = "$name vs Pemain"
         menu_text2.text = "$name vs CPU"
 
-        menu_img1.setOnClickListener(){
-            val intent = Intent(this, MainActivity::class.java)
-            val bundle = Bundle()
-
-            bundle.putString("nama", name)
-            intent.putExtras(bundle)
-            startActivity(intent)
-        }
-
-        menu_text1.setOnClickListener(){
-            val intent = Intent(this, MainActivity::class.java)
-            val bundle = Bundle()
-
-            bundle.putString("nama", name)
-            intent.putExtras(bundle)
-            startActivity(intent)
-        }
-
         menu_img2.setOnClickListener(){
+            val intent = Intent(this, MainActivity::class.java)
+            val bundle = Bundle()
+
+            bundle.putString("nama", name)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
+        menu_text2.setOnClickListener(){
+            val intent = Intent(this, MainActivity::class.java)
+            val bundle = Bundle()
+
+            bundle.putString("nama", name)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
+
+        menu_img1.setOnClickListener(){
             Toast.makeText(
                 this,
                 "Pilihan ini belum tersedia, nunggu developernya semangat",
@@ -48,7 +48,7 @@ class MenuActivity : AppCompatActivity() {
             ).show()
         }
 
-        menu_text2.setOnClickListener(){
+        menu_text1.setOnClickListener(){
             Toast.makeText(
                 this,
                 "Pilihan ini belum tersedia, nunggu developernya semangat",

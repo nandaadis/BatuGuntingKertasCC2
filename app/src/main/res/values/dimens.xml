@@ -6,8 +6,8 @@
     <dimen name="text_status">30sp</dimen>
     <dimen name="iconsize">64dp</dimen>
     <dimen name="iconsize_select">100dp</dimen>
-    <dimen name="vector_size">64dp</dimen>
-    <dimen name="vector_margin">16dp</dimen>
+    <dimen name="vector_size">48dp</dimen>
+    <dimen name="vector_margin">18dp</dimen>
     <dimen name="lp_imgsize">200dp</dimen>
     <dimen name="lp_imgmargin">200dp</dimen>
     <dimen name="menu_imgsize">128dp</dimen>

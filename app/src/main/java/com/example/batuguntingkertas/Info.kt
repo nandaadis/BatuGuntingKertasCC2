@@ -18,7 +18,6 @@ class Info : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.back.setOnClickListener(){
-            startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
     }
