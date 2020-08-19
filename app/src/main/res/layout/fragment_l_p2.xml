@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmentLP2">
+    tools:context=".onBoarding.FragmentLP2">
 
     <ImageView
         android:id="@+id/lp_img2"

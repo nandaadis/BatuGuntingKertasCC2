@@ -1,8 +1,7 @@
-package com.example.batuguntingkertas
+package com.example.batuguntingkertas.game
 
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import com.example.batuguntingkertas.databinding.ActivityMainBinding
 

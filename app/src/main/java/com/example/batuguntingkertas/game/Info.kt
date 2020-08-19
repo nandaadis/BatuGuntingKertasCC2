@@ -1,11 +1,9 @@
-package com.example.batuguntingkertas
+package com.example.batuguntingkertas.game
 
-import android.content.Intent
-import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.batuguntingkertas.R
 import com.example.batuguntingkertas.databinding.ActivityInfoBinding
-import com.example.batuguntingkertas.databinding.ActivityMainBinding
 
 class Info : AppCompatActivity() {
 

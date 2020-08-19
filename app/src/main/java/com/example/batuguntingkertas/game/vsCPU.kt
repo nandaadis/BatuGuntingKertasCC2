@@ -1,21 +1,18 @@
-package com.example.batuguntingkertas
+package com.example.batuguntingkertas.game
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
-import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.isVisible
 import com.bumptech.glide.Glide
+import com.example.batuguntingkertas.R
 import com.example.batuguntingkertas.databinding.ActivityMainBinding
 import com.example.batuguntingkertas.databinding.ActivityMainBinding.inflate
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_menu.*
 
-class MainActivity : AppCompatActivity() {
+class vsCPU : AppCompatActivity() {
 
 
     lateinit var binding: ActivityMainBinding
@@ -46,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         exit.setOnClickListener() {
-            System.exit(0);
+            this.finishAffinity();
         }
 
         //Restart Button
@@ -224,7 +221,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.info.setOnClickListener(){
-            startActivity(Intent(this,Info::class.java))
+            startActivity(Intent(this, Info::class.java))
         }
 
 

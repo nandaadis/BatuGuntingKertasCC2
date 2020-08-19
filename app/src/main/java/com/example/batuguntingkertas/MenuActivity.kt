@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.example.batuguntingkertas.game.vsCPU
 import kotlinx.android.synthetic.main.activity_menu.*
-import kotlinx.android.synthetic.main.fragment_l_p3.*
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ class MenuActivity : AppCompatActivity() {
         menu_text2.text = "$name vs CPU"
 
         menu_img2.setOnClickListener(){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, vsCPU::class.java)
             val bundle = Bundle()
 
             bundle.putString("nama", name)
@@ -32,7 +32,7 @@ class MenuActivity : AppCompatActivity() {
         }
 
         menu_text2.setOnClickListener(){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, vsCPU::class.java)
             val bundle = Bundle()
 
             bundle.putString("nama", name)

@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".LandingPageActivity" />
-        <activity android:name=".Info" />
+        <activity android:name=".onBoarding.LandingPageActivity" />
+        <activity android:name=".game.Info" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".game.vsCPU" />
     </application>
 
 </manifest>
