@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/l_rv">
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_tanggal"
             android:layout_width="match_parent"
@@ -49,6 +48,7 @@
                 android:backgroundTint="@color/colorAccent"
                 android:clickable="false"
                 android:editable="false"
+                android:layout_marginBottom="21dp"
                 />
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
