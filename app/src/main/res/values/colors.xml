@@ -5,6 +5,7 @@
     <color name="colorAccent">#ff6768</color>
 
     <color name="bgprimary">#17223b</color>
+    <color name="bgsecondary">#263859</color>
     <color name="red">#e7305b</color>
     <color name="blue">#01a9b4</color>
     <color name="kuning">#f0a500</color>
