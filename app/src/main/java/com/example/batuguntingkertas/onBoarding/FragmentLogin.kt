@@ -85,8 +85,8 @@ class FragmentLogin : Fragment() {
 
         btn_reset.setOnClickListener {
             val editor = sharedPreferences.edit()
-            editor.putString("Username", "a")
-            editor.putString("Password", "a")
+            editor.putString("Username", "Sabrina")
+            editor.putString("Password", "binar123")
             editor.apply()
         }
     }
